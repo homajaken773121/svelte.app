@@ -22,6 +22,7 @@
     <button class="btn" on:click={addCount}>+1</button>
     <button class="btn btn-dark" on:click={removeCount}>-1</button>
     <button class="btn" on:click={reset}>reset</button>
+    id: {id}
     <button class="btn btn-danger btn-sm" on:click={onDelete}>削除</button>
     
     Counts: {counts}

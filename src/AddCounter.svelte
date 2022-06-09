@@ -19,6 +19,6 @@
 </script>
   
 <form on:submit={onSubmit} class="grid-3">
-  <input type="text" placeholder="Counter Name" bind:value={counter.title} />
+  <input type="text" placeholder="Counter Name" bind:value={counter.title} required/>
   <input type="submit" class="btn btn-primary" value="Add Counter" />
 </form>

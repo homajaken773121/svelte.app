@@ -9,19 +9,14 @@
   import AddCounter from "./AddCounter.svelte";
   import Sum from "./Sum.svelte";
   
-  let counters = [
-    {
-	    id: 0,
-      title: "",
-      counts: 0
-    },
-  ];
+  let counters = [];
 
   let total: any;
   
   const addCounter = (e: any) => {
     const newCounter = e.detail;
     counters = [...counters, newCounter];
+    alert( "配列のサイズは" + Object.keys( counters ).length );
   };
   
   const removeCounter = (e: any) => {
